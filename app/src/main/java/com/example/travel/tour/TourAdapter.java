@@ -50,6 +50,7 @@ public class TourAdapter extends RecyclerView.Adapter<TourAdapter.MyViewHolder>{
             name = itemView.findViewById(R.id.name);
             country = itemView.findViewById(R.id.country);
             explanation = itemView.findViewById(R.id.explanation);
+            dinldf:dsfa;
         }
 
     }
