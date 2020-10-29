@@ -32,8 +32,9 @@ public class TourAdapter extends RecyclerView.Adapter<TourAdapter.MyViewHolder>{
         Tour tour = tourList.get(position);
         holder.name.setText(tour.getName());
         holder.country.setText(tour.getCountry());
-        holder.tour_picture.setImageResource(tour.getTno());
+        holder.tour_picture.setImageResource(tour.getTour_picture());
         holder.explanation.setText(tour.getExplanation());
+        holder.tno.setText(Integer.toString(tour.getTno()));
     }
 
     @Override
@@ -42,7 +43,7 @@ public class TourAdapter extends RecyclerView.Adapter<TourAdapter.MyViewHolder>{
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
-        public TextView name, country, explanation;
+        public TextView name, country, explanation, tno;
         public ImageView tour_picture;
 
         public MyViewHolder(@NonNull View itemView) {
@@ -51,6 +52,7 @@ public class TourAdapter extends RecyclerView.Adapter<TourAdapter.MyViewHolder>{
             name = itemView.findViewById(R.id.name);
             country = itemView.findViewById(R.id.country);
             explanation = itemView.findViewById(R.id.explanation);
+            tno = itemView.findViewById(R.id.tno);
         }
 
     }

@@ -41,5 +41,11 @@
             android:layout_height="wrap_content"
             android:text="TextView" />
 
+        <TextView
+            android:id="@+id/tno"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="TextView" />
+
     </LinearLayout>
 </LinearLayout>
