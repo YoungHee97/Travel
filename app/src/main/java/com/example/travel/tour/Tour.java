@@ -2,12 +2,13 @@ package com.example.travel.tour;
 
 public class Tour {
     int tno;
-    String name, country,  explanation;
+    String name, country,  explanation, link;
 
-    public Tour(String name, String country, String explanation) {
+    public Tour(int tno, String name, String country, String link, String explanation) {
         this.tno = tno;
         this.name = name;
         this.country = country;
+        this.link = link;
         this.explanation = explanation;
     }
 
@@ -43,4 +44,11 @@ public class Tour {
         this.explanation = explanation;
     }
 
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
 }

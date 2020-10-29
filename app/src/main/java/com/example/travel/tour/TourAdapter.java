@@ -32,6 +32,7 @@ public class TourAdapter extends RecyclerView.Adapter<TourAdapter.MyViewHolder>{
         Tour tour = tourList.get(position);
         holder.name.setText(tour.getName());
         holder.country.setText(tour.getCountry());
+        holder.tour_picture.setImageResource(tour.getTno());
         holder.explanation.setText(tour.getExplanation());
     }
 
