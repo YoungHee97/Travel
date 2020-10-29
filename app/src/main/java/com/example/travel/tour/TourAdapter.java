@@ -3,6 +3,7 @@ package com.example.travel.tour;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -41,9 +42,11 @@ public class TourAdapter extends RecyclerView.Adapter<TourAdapter.MyViewHolder>{
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
         public TextView name, country, explanation;
+        public ImageView tour_picture;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+            tour_picture = itemView.findViewById(R.id.tour_picture);
             name = itemView.findViewById(R.id.name);
             country = itemView.findViewById(R.id.country);
             explanation = itemView.findViewById(R.id.explanation);

@@ -36,6 +36,9 @@ public class Tour_list extends AppCompatActivity {
         tour = new Tour("타지마할","인도","아름답다");
         tourList.add(tour);
 
+        tour = new Tour("마추 픽추","페루","아름답다");
+        tourList.add(tour);
+
         tAdapter.notifyDataSetChanged();
     }
 }
