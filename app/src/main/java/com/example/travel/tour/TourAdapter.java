@@ -49,7 +49,7 @@ public class TourAdapter extends RecyclerView.Adapter<TourAdapter.MyViewHolder>{
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             tour_picture = itemView.findViewById(R.id.tour_picture);
-            name = itemView.findViewById(R.id.name);
+            name = itemView.findViewById(R.id.name2);
             country = itemView.findViewById(R.id.country);
             explanation = itemView.findViewById(R.id.explanation);
             tno = itemView.findViewById(R.id.tno);

@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/transportation"
+        app:layout_constraintBottom_toTopOf="@+id/restaurant"
         app:layout_constraintEnd_toStartOf="@+id/accommodation"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,32 +23,32 @@
         android:layout_height="0dp"
         android:layout_marginEnd="1dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintBottom_toTopOf="@+id/transportation "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tour"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/accommodation" />
 
     <ImageView
-        android:id="@+id/transportation"
+        android:id="@+id/restaurant"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/transportation "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tour"
         app:srcCompat="@drawable/restaurant" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/transportation "
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="1dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/transportation"
+        app:layout_constraintStart_toEndOf="@+id/restaurant"
         app:layout_constraintTop_toBottomOf="@+id/accommodation"
         app:srcCompat="@drawable/transportation" />
 </androidx.constraintlayout.widget.ConstraintLayout>

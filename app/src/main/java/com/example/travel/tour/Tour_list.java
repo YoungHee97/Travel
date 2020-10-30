@@ -30,7 +30,6 @@ public class Tour_list extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
         tAdapter = new TourAdapter(tourList);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        recyclerView.addItemDecoration(new ItemDeco(this, LinearLayoutManager.VERTICAL));
         recyclerView.setAdapter(tAdapter);
         prepareTourData();
         final GestureDetector gestureDetector = new GestureDetector(this, new GestureDetector.SimpleOnGestureListener(){
